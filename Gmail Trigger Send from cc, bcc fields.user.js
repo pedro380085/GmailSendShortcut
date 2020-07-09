@@ -38,7 +38,7 @@
    * Set listeners for shortcut event.
    */
   window.addEventListener('keydown', function(event) {
-      if (event.keyCode === 13 && event.ctrlKey) {
+      if (event.keyCode === 13 && (event.ctrlKey || event.metaKey)) {
           focusDiv();
       }
     }, true);
