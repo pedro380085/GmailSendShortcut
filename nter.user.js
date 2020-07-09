@@ -3,7 +3,8 @@
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  The standard Cmd + Enter shortcut will not work when you the cursor is set for cc and bcc fields, with this script it works.
-// @author       You
+// @license      MIT
+// @author       Pedro Góes
 // @include      https://mail.google.tld/*
 // @grant        none
 // ==/UserScript==
