@@ -15,7 +15,22 @@
    * Swap languages by emulating mouse click events on UI button.
    */
   function focusDiv() {
-      document.getElementById(':7m').click();
+      var aTags = document.getElementsByTagName("div");
+      var searchText = "Send";
+      var foundTag;
+
+      for (var i = 0; i < aTags.length; i++) {
+          if (aTags[i].textContent == searchText) {
+              console.log(aTags[i].textContent);
+              console.log(aTags[i].getAttribute("role"));
+              if (aTags[i].getAttribute("role") == "button") {
+                  foundTag = aTags[i];
+                  break;
+              }
+          }
+      }
+
+      foundTag.click();
       //swapBtn.dispatchEvent(new MouseEvent(type));
   }
 
